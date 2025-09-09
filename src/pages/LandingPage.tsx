@@ -118,9 +118,9 @@ const LandingPage: React.FC = () => {
                     <span className="text-gray-600 text-sm ml-2">({product.reviewCount})</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <span className="font-bold text-lg text-[#3AA6B9]">${product.price}</span>
+                    <span className="font-bold text-lg text-[#3AA6B9]">₦{product.price.toLocaleString()}</span>
                     {product.originalPrice && (
-                      <span className="text-gray-500 line-through">${product.originalPrice}</span>
+                      <span className="text-gray-500 line-through">₦{product.originalPrice.toLocaleString()}</span>
                     )}
                   </div>
                 </div>
